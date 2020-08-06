@@ -2,8 +2,13 @@ July 30, 2020
 API ingests a query parameter
 API returns query parameter un-processed
 
-TO DO
+August 6, 2020
 Add error handling if no text is submitted
 - service should throw a Bad Request
+
+
+TO DO
 Write unit tests for the getText endpoint
 Write functional tests for the getText endpoint
+Extract BadRequestException into separate project
+
