@@ -23,7 +23,13 @@ app.use(async (ctx, next) => {
   app.use(async ctx => {
     console.log('response')
     const requestedText: string = ctx.request.query.txt
-    ctx.body = new Controller().getText(requestedText);
+    try {
+      ctx.body = new Controller().getText(requestedText);
+    } catch (e) {
+      ctx.status = e.status || 500;
+      ctx.body = e.message;
+      ctx.throw(ctx.status, ctx.body);
+    }
   });
   
   app.listen(3000);
