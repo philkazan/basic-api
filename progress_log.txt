@@ -6,9 +6,18 @@ August 6, 2020
 Add error handling if no text is submitted
 - service should throw a Bad Request
 
+August 9, 2020
+Add unit tests for getText endpoint
 
 TO DO
-Write unit tests for the getText endpoint
+Figure out why unit tests are failing
+Figure out why Mocha requires a wrapper function to catch exceptions
 Write functional tests for the getText endpoint
 Extract BadRequestException into separate project
+
+THINGS OF INTEREST
+- update Mocha to use Mocharc file instead of Mocha.opts
+- What is a Module?
+- Create my own type declaration file for the Service class
+- Why do I need to specify a directory in the Mocha opts?
 
