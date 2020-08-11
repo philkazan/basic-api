@@ -2,6 +2,7 @@ export default class BadRequestException extends Error {
     _status: number;
     constructor(msg: string) {
         super(msg);
+        Object.setPrototypeOf(this, BadRequestException.prototype)
         this.status = 400;
     }
 

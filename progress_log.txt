@@ -20,4 +20,6 @@ THINGS OF INTEREST
 - What is a Module?
 - Create my own type declaration file for the Service class
 - Why do I need to specify a directory in the Mocha opts?
+- What's the deal with Object.setPrototypeOf(this, BadRequestException.prototype)?
+- - why does it allow Mocha's exception check to succeed?
 

@@ -2,7 +2,6 @@ import 'mocha';
 import * as Chai from 'chai';
 import { Service } from '../src/service';
 import BadRequestException from '../src/badRequestException';
-import { createGunzip } from 'zlib';
 
 describe('Service', function () {
   describe('getText', function () {
